@@ -13,9 +13,6 @@ variables:
  
   node_type_id:
     description: Node type ID
-  
-  host:
-   description: workpsace host ID
  
 
 include:
