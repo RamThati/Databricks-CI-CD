@@ -14,11 +14,7 @@ variables:
   node_type_id:
     description: Node type ID
   
-  DATABRICKS_HOST:
-    description: Host ID
 
-
- 
 
 include:
   - resources/*.yml
@@ -28,7 +24,7 @@ targets:
   dev:
     mode: development
     workspace:
-      host : ${env.DATABRICKS_HOST}
+      host : https://calsaws-analytics-sbx-secure.cloud.databricks.com
       root_path: ~/${var.env}/${bundle.name}
 
 
