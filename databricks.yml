@@ -1,0 +1,34 @@
+bundle:
+  name: databricks-bundle-sample
+
+variables:
+  env:
+    description: Deployment environment
+ 
+  num_workers:
+    description: Number of workers
+ 
+  spark_version:
+    description: Spark version
+ 
+  node_type_id:
+    description: Node type ID
+  
+  host:
+   description: workpsace host ID
+ 
+
+include:
+  - resources/*.yml
+  - env/*.yml
+ 
+targets:
+  dev:
+    mode: development
+    workspace:
+      host : ${var.host}
+      root_path: /Shared/${var.env}/${bundle.name}
+
+
+
+ 

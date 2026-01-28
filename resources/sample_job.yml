@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    sample_job:
+      name: sample-job-${var.env}
+ 
+      tasks:
+        - task_key: run_notebook
+          new_cluster:
+            num_workers: ${var.num_workers}
+            spark_version: ${var.spark_version}
+            node_type_id: ${var.node_type_id}
+          notebook_task:
+            notebook_path: ${workspace.root_path}/src/notebooks/sample_notebook.py
