@@ -28,7 +28,7 @@ targets:
   dev:
     mode: development
     workspace:
-      host : ${var.DATABRICKS_HOST}
+      host : ${env.DATABRICKS_HOST}
       root_path: ~/${var.env}/${bundle.name}
 
 
