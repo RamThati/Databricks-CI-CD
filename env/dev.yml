@@ -4,4 +4,4 @@ targets:
       env: dev
       num_workers: 1
       spark_version: r3.xlarge
-      node_type_id: Standard_DS3_v2
+      node_type_id: r3.xlarge
