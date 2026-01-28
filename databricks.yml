@@ -1,5 +1,5 @@
 bundle:
-  name: databricks-bundle-sample
+  name: Demo-Repo
 
 variables:
   env:
@@ -13,6 +13,9 @@ variables:
  
   node_type_id:
     description: Node type ID
+  
+  host:
+    description: Host details
  
 
 include:
@@ -23,8 +26,8 @@ targets:
   dev:
     mode: development
     workspace:
-      host : https://calsaws-analytics-sbx-secure.cloud.databricks.com/
-      root_path: ~/Workspace/Shared/${var.env}/${bundle.name}
+      host : ${var.host}
+      root_path: ~/Shared/${var.env}/${bundle.name}
 
 
 
