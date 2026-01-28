@@ -26,7 +26,7 @@ targets:
   dev:
     mode: development
     workspace:
-      host : ${var.host}
+      host : https://calsaws-analytics-sbx-secure.cloud.databricks.com/
       root_path: /Shared/${var.env}/${bundle.name}
 
 
