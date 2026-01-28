@@ -1,7 +1,7 @@
 resources:
   jobs:
     sample_job:
-      name: [Demo Job] sample-job-${var.env}
+      name: '[Demo Job] sample-job-${var.env}'
  
       tasks:
         - task_key: run_notebook
