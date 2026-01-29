@@ -2,6 +2,6 @@ targets:
   dev:  
     variables:
       env: DEV
-      num_workers: 1
+      num_workers: 2
       spark_version: 17.1.x-scala2.13
       node_type_id: i3.xlarge
