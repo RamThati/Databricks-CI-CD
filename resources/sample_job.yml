@@ -1,3 +1,32 @@
+variables:
+  env:
+    description: Deployment environment
+ 
+  sample_job_num_workers:
+    description: Number of workers
+ 
+  sample_job_spark_version:
+    description: Spark version
+ 
+  sample_job_node_type_id:
+    description: Node type ID
+
+targets:
+  dev:  
+    variables:
+      env: DEV
+      sample_job_num_workers: 3
+      sample_job_spark_version: 17.1.x-scala2.13
+      sample_job_node_type_id: i3.xlarge
+  
+  qa:  
+    variables:
+      env: QA
+      num_workers: 3
+      spark_version: 17.1.x-scala2.13
+      node_type_id: i3.xlarge
+
+
 resources:
   jobs:
     sample_job:
