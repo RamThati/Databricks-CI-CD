@@ -1,20 +1,6 @@
 bundle:
   name: Demo-Repo
 
-variables:
-  env:
-    description: Deployment environment
- 
-  num_workers:
-    description: Number of workers
- 
-  spark_version:
-    description: Spark version
- 
-  node_type_id:
-    description: Node type ID
-  
-
 
 include:
   - resources/*.yml

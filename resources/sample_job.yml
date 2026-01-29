@@ -6,8 +6,8 @@ resources:
       tasks:
         - task_key: run_notebook
           new_cluster:
-            num_workers: ${var.num_workers}
-            spark_version: ${var.spark_version}
-            node_type_id: ${var.node_type_id}
+            num_workers: ${var.sample_job_num_workers}
+            spark_version: ${var.sample_job_spark_version}
+            node_type_id: ${var.sample_job_node_type_id}
           notebook_task:
             notebook_path: ../src/notebooks/sample_notebook.py
