@@ -15,7 +15,7 @@ targets:
   dev:  
     variables:
       env: DEV
-      sample_job_num_workers: 1
+      sample_job_num_workers: 2
       sample_job_spark_version: 17.1.x-scala2.13
       sample_job_node_type_id: i3.xlarge
   
