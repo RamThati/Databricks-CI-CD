@@ -1,3 +1,15 @@
+variables:
+  env:
+    description: Deployment environment
+ 
+  sample_job_num_workers:
+    description: Number of workers
+ 
+  sample_job_spark_version:
+    description: Spark version
+ 
+  sample_job_node_type_id:
+    description: Node type ID
 
 targets:
   dev:  
