@@ -25,7 +25,14 @@ targets:
     mode: development
     workspace:
       host : https://calsaws-analytics-sbx-secure.cloud.databricks.com
-      root_path: /Workspace/Users/thatis@calsaws.org/DEV/Demo-Repo
+      root_path: /Shared/${var.env}/${bundle.name}
+  
+  qa:
+    mode: production
+    workspace:
+      host : https://calsaws-analytics-sbx-county.cloud.databricks.com/
+      root_path: /Shared/${var.env}/${bundle.name}
+  
 
 
  
